@@ -1,0 +1,5 @@
+# CPU Scheduling Visualizer - Dependencies
+# Python 3.8+ required
+
+matplotlib>=3.5.0
+# Tkinter is part of Python standard library (no pip install needed)
