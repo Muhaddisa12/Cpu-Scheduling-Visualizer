@@ -17,7 +17,7 @@ Visualize and compare 6 different CPU scheduling algorithms with Gantt charts, m
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)
@@ -34,7 +34,7 @@ Visualize and compare 6 different CPU scheduling algorithms with Gantt charts, m
 
 ---
 
-## 🎯 Overview
+##  Overview
 
 **CPU Scheduling Visualizer** is a comprehensive desktop application designed for students and educators in Operating Systems courses. It provides an intuitive graphical interface to:
 
@@ -52,11 +52,11 @@ Built with **Python 3**, **Tkinter** (GUI), and **Matplotlib** (visualization), 
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Core Functionality
 
-- ✅ **6 Scheduling Algorithms**
+-  **6 Scheduling Algorithms**
   - First Come First Serve (FCFS)
   - Shortest Job First - Non-Preemptive (SJF-NP)
   - Shortest Job First - Preemptive / SRTF (SJF-P)
@@ -64,31 +64,31 @@ Built with **Python 3**, **Tkinter** (GUI), and **Matplotlib** (visualization), 
   - Priority Scheduling - Preemptive
   - Round Robin (RR) with configurable time quantum
 
-- ✅ **Interactive Process Input**
+-  **Interactive Process Input**
   - Table-style input with Add/Delete rows
   - Dynamic Priority field (enabled only for priority algorithms)
   - Time Quantum input (enabled only for Round Robin)
   - Input validation with clear error messages
 
-- ✅ **Gantt Chart Visualization**
+-  **Gantt Chart Visualization**
   - Color-coded process blocks
   - Start and end times displayed on each block
   - Idle CPU periods shown in gray
   - Multiple slices for preemptive algorithms (context switches)
   - Real-time updates
 
-- ✅ **Comprehensive Metrics**
+-  **Comprehensive Metrics**
   - Per-process: Completion Time, Turnaround Time, Waiting Time
   - System-wide: Average Waiting Time, Average Turnaround Time
   - Formatted results table
 
-- ✅ **Algorithm Comparison**
+-  **Algorithm Comparison**
   - Run all 6 algorithms on the same input simultaneously
   - Side-by-side bar graphs for Average Waiting Time and Average Turnaround Time
   - Best-performing algorithm highlighted in green
   - Easy performance comparison
 
-- ✅ **Step-by-Step Mode**
+-  **Step-by-Step Mode**
   - Educational feature for understanding algorithm execution
   - Advance one Gantt segment at a time
   - Display current time and running process
@@ -96,15 +96,15 @@ Built with **Python 3**, **Tkinter** (GUI), and **Matplotlib** (visualization), 
 
 ### User Experience
 
-- 🎨 **Clean, Modern UI** with organized panels
-- 🔄 **Dynamic Field Enabling** based on selected algorithm
-- ✅ **Input Validation** with helpful error messages
-- 📊 **Professional Visualizations** with Matplotlib
-- 🎓 **Educational Comments** explaining OS concepts in code
+-  **Clean, Modern UI** with organized panels
+-  **Dynamic Field Enabling** based on selected algorithm
+-  **Input Validation** with helpful error messages
+-  **Professional Visualizations** with Matplotlib
+-  **Educational Comments** explaining OS concepts in code
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 > **Note:** Screenshots can be added here. The application features:
 > - Left panel: Process input table with Add/Delete buttons
@@ -114,7 +114,7 @@ Built with **Python 3**, **Tkinter** (GUI), and **Matplotlib** (visualization), 
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -187,7 +187,7 @@ sudo pacman -S tk
 
 ---
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### Starting the Application
 
@@ -287,19 +287,19 @@ Click **Compare All Algorithms** to:
 
 The application validates:
 
-- ✅ **At least one process** required
-- ✅ **Unique Process IDs** (no duplicates)
-- ✅ **Non-negative values** for Arrival Time, Burst Time
-- ✅ **Priority required** when Priority algorithms are selected
-- ✅ **Time Quantum > 0** required for Round Robin
-- ✅ **Numeric values** only (no text in numeric fields)
+-  **At least one process** required
+-  **Unique Process IDs** (no duplicates)
+-  **Non-negative values** for Arrival Time, Burst Time
+-  **Priority required** when Priority algorithms are selected
+-  **Time Quantum > 0** required for Round Robin
+- **Numeric values** only (no text in numeric fields)
 
 **Error Messages:**
 - Clear, descriptive error dialogs guide users to fix issues
 
 ---
 
-## 🔬 Algorithms
+##  Algorithms
 
 ### 1. First Come First Serve (FCFS)
 
@@ -311,9 +311,9 @@ The application validates:
 - Simplest scheduling algorithm
 
 **Characteristics:**
-- ✅ Simple to implement
-- ❌ Poor average waiting time (convoy effect)
-- ❌ No preemption
+-  Simple to implement
+-  Poor average waiting time (convoy effect)
+-  No preemption
 
 **When to Use:**
 - Simple systems
@@ -337,9 +337,9 @@ Gantt: [P1:0-4][P2:4-7][P3:7-9]
 - Process runs to completion once selected
 
 **Characteristics:**
-- ✅ Optimal average waiting time (when all arrive at once)
-- ❌ Starvation possible for long jobs
-- ❌ Requires knowledge of burst times
+-  Optimal average waiting time (when all arrive at once)
+-  Starvation possible for long jobs
+-  Requires knowledge of burst times
 
 **When to Use:**
 - Batch systems with known job lengths
@@ -363,10 +363,10 @@ Gantt: [P1:0-4][P3:4-6][P2:6-9]  (P3 selected before P2 due to shorter burst)
 - Also called Shortest Remaining Time First (SRTF)
 
 **Characteristics:**
-- ✅ Better average waiting time than SJF-NP
-- ✅ Responsive to new arrivals
-- ❌ More context switches (overhead)
-- ❌ Starvation possible
+-  Better average waiting time than SJF-NP
+-  Responsive to new arrivals
+-  More context switches (overhead)
+-  Starvation possible
 
 **When to Use:**
 - Interactive systems
@@ -391,9 +391,9 @@ Gantt: [P1:0-1][P2:1-2][P3:2-4][P2:4-5][P1:5-6]
 - Tie-breaking: earlier arrival time
 
 **Characteristics:**
-- ✅ Respects priority levels
-- ❌ Starvation for low-priority processes
-- ❌ No preemption
+-  Respects priority levels
+-  Starvation for low-priority processes
+-  No preemption
 
 **Priority Convention:**
 - **Lower number = Higher priority** (e.g., 1 > 2 > 3)
@@ -419,10 +419,10 @@ Gantt: [P1:0-4][P2:4-7][P3:7-9]  (P2 has highest priority but arrives after P1 s
 - Preempts current process when a higher-priority process arrives
 
 **Characteristics:**
-- ✅ Immediate response to high-priority tasks
-- ✅ Suitable for real-time systems
-- ❌ Severe starvation for low-priority processes
-- ❌ More context switches
+-  Immediate response to high-priority tasks
+-  Suitable for real-time systems
+-  Severe starvation for low-priority processes
+-  More context switches
 
 **When to Use:**
 - Real-time operating systems
@@ -447,9 +447,9 @@ Gantt: [P1:0-1][P2:1-4][P1:4-6][P3:6-8]
 - Fair CPU sharing among all processes
 
 **Characteristics:**
-- ✅ No starvation (fair scheduling)
-- ✅ Good for time-sharing systems
-- ⚠️ Performance depends on time quantum size
+-  No starvation (fair scheduling)
+-  Good for time-sharing systems
+-  Performance depends on time quantum size
   - Too large → behaves like FCFS
   - Too small → excessive context switching overhead
 
@@ -471,7 +471,7 @@ Gantt: [P1:0-2][P2:2-4][P3:4-6][P1:6-8][P2:8-9]
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 cpu_scheduling_visualizer/
@@ -518,7 +518,7 @@ cpu_scheduling_visualizer/
 
 ---
 
-## 💡 Examples
+##  Examples
 
 ### Example 1: Basic FCFS Scheduling
 
@@ -628,7 +628,7 @@ P3         | 2            | 2          | 3
 
 ---
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Dependencies
 
@@ -677,15 +677,15 @@ Avg TT = (Sum of all TT) / Number of processes
 
 ### Edge Cases Handled
 
-- ✅ **Zero burst time**: Process completes instantly at arrival
-- ✅ **Same arrival times**: Tie-breaking by process ID or input order
-- ✅ **Idle CPU**: Gray blocks shown when no process is ready
-- ✅ **Preemption**: Multiple Gantt slices for preemptive algorithms
-- ✅ **Empty input**: Validation prevents running with no processes
+-  **Zero burst time**: Process completes instantly at arrival
+-  **Same arrival times**: Tie-breaking by process ID or input order
+-  **Idle CPU**: Gray blocks shown when no process is ready
+-  **Preemption**: Multiple Gantt slices for preemptive algorithms
+-  **Empty input**: Validation prevents running with no processes
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -746,7 +746,7 @@ pip install matplotlib
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! This project is designed for educational purposes.
 
@@ -779,20 +779,20 @@ Contributions are welcome! This project is designed for educational purposes.
 
 ---
 
-## 📝 License
+##  License
 
 This project is provided for **educational and academic purposes**. Feel free to use, modify, and distribute for learning and teaching.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **CPU Scheduling Visualizer**  
 Developed for Operating Systems academic courses
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Operating Systems** course curriculum
 - **Python Tkinter** documentation
@@ -801,7 +801,7 @@ Developed for Operating Systems academic courses
 
 ---
 
-## 📚 References
+##  References
 
 - Operating System Concepts (Silberschatz, Galvin, Gagne)
 - CPU Scheduling Algorithms - GeeksforGeeks
@@ -810,7 +810,7 @@ Developed for Operating Systems academic courses
 
 ---
 
-## 🎓 Educational Use
+##  Educational Use
 
 This tool is ideal for:
 
@@ -830,8 +830,8 @@ This tool is ideal for:
 
 <div align="center">
 
-**⭐ If you find this project helpful, please consider giving it a star! ⭐**
+** If you find this project helpful, please consider giving it a star! **
 
-Made with ❤️ for Operating Systems education
+Made with  for Operating Systems education
 
 </div>
